@@ -1,0 +1,46 @@
+.section-sobre{
+  text-align: center;
+  padding: 15px 0; 
+  @include breakpoint('min',S){
+    padding: 30px 0 15px;
+  }
+}
+.sobre-titulo{
+  font-size: 28px;
+  line-height: 2;
+}
+.sobre-cards{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.sobre-icone{
+  color: $azul;
+}
+.sobre-SubTitulo{
+  margin: 10px 0 0;
+  color: $preto;
+}
+.sobre-descricao{
+  font-size: 14px;
+  font-style: italic;
+  display: inline-block;
+  color: $preto;
+}
+.sobre-info{
+  padding: 0 15px;
+  margin-bottom: 35px;
+  @include breakpoint('min',S){ 
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+.sobre-info-titulo {
+  margin-bottom: 7px;
+
+}
+.sobre-info-frase {
+  line-height: 1;
+  font-size: 14px;
+  color: $preto;
+  margin-bottom: 5px;
+}
