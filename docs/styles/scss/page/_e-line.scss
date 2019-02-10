@@ -1,0 +1,54 @@
+.e-line-container{
+  position: relative;
+  padding: 35px 0;
+  max-width: 200px;
+  margin: auto;
+
+}
+.e-line{
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  // width: 90%;
+  height: 20px;
+  display: block;
+}
+.e-line-top{
+  top: 0;
+}
+.e-line-bottom{
+  bottom: 0;
+}
+
+.e-line::before,
+.e-line::after{
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  border: 1px solid transparent;
+}
+.e-line::before{
+  float: left;
+}
+.e-line::after{
+  float: right;
+}
+
+.e-line-top::before{
+  border-left-color: $azul;
+  border-top-color: $azul;
+}
+.e-line-top::after{
+  border-right-color: $azul;
+  border-top-color: $azul;
+}
+.e-line-bottom::before{
+  border-left-color: $azul;
+  border-bottom-color: $azul;
+}
+.e-line-bottom::after{
+  border-right-color: $azul;
+  border-bottom-color: $azul;
+}

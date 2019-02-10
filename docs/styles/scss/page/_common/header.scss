@@ -1,0 +1,130 @@
+// HEADER
+.header-topo{
+    background: #1162905c;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.75),
+        rgba(255, 255, 255, 0.55),
+        rgba(255, 255, 255, 0.55),
+        rgba(255, 255, 255, 0.75)
+    ),url(../assets/bg-02.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+// LOGO
+.header-logo{
+    position: relative;
+}
+.header-logo::after,
+.header-logo::before{
+    position: absolute;
+    bottom: 0;
+    content: "";
+    display: block;
+    width: 25%;
+    background: #fff;
+    height: 1px;
+    box-shadow: 0 1px 8px 0 $azul;
+}
+.header-logo::after{
+    left: 0;
+}
+.header-logo::before{
+    right: 0;
+}
+.header-logo img{
+    display: block;
+    max-width: 300px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+
+
+// MENU
+.header-menu ul{
+
+}
+.header-menu ul {
+    display: none;
+    @include breakpoint('min', S){
+        display: flex;
+    }
+    flex-wrap: wrap;
+    width: fit-content;
+    margin: auto;
+}
+.header-menu a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $preto
+}
+.header-menu a:hover {
+    color: #fff;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+
+
+// HEADER COMPONENTES
+.header-main{
+    // padding: 75px 0;
+    height: calc( 100vh - 150px - 62px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    @include breakpoint('min', S){
+        display: block;
+        height: auto;
+        padding: 150px 0;
+    }
+}
+.header-titulo{
+    line-height: 1.15;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 24px;
+    @include breakpoint('min', S){
+        font-size: 38px;
+    }
+}
+.header-frase{
+    max-width: 750px;
+    color: $preto;
+    line-height: 1.5;
+    text-align: center;
+    font-size: 14px;
+    @include breakpoint('min', S){
+        margin: auto;
+        font-size: 16px;
+    }
+}
+
+
+
+// SOCIAL
+.header-wrapper-social{
+    display: flex;
+    justify-content: center;
+}
+.header-wrapper-social a{
+    display: inline-block;
+    margin: 20px 7px;
+    padding: 5px;
+    font-size: 18px;
+    color: black;
+}
+.header-wrapper-social a:hover{
+    color: $azul
+}

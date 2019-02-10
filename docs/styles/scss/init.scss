@@ -1,0 +1,14 @@
+@import 'config/reset';
+@import 'config/variables';
+
+@import 'mixin/mixin';
+@import 'mixin/mixin-components';
+
+@import 'layout/grid-sass';
+
+@import 'page/_common/header';
+
+@import 'page/_e-line';
+
+@import 'page/section-sobre';
+@import 'page/section-frase';
