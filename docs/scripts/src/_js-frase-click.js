@@ -1,4 +1,3 @@
-console.log('oi');
 {
   const frases = document.querySelectorAll('.servico-frase')
   const textos = document.querySelectorAll('.servico-texto')
