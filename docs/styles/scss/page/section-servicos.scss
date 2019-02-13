@@ -1,0 +1,86 @@
+.section-servicos{
+  margin: 20px 0;
+  box-shadow: inset 0 0 4px 1px $azul;
+  @include breakpoint('min',S){
+    margin: 50px 0 100px;
+  }
+}
+.servico-bloco{
+  // background: rgba(0,0,0,.5)
+}
+.servico-bloco:nth-child(1){
+  background: #116290;
+  @include breakpoint('max',S){
+    height: 115px;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+  @include breakpoint('min',S){
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.servico-bloco:nth-child(2){
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  @include breakpoint('min',S){
+    height: 300px;
+    
+  }
+}
+// FRASES
+.servico-frase{
+  font-size: 14px;
+  padding: 5px 12px;
+  color: rgba(250,250,250,.7); 
+  background: $azul;
+  text-transform: uppercase;
+  @include breakpoint('min',S){
+    max-width: 200px;
+    width: 100%;
+  }
+}
+.servico-frase.click{
+  font-size: 18px;
+  color: rgba(250,250,250,1);
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.15);
+  animation: .5s click forwards;
+  @include breakpoint('min',S){
+    padding: 20px 8px;
+  }
+}
+
+
+
+// TEXTOS
+.servico-texto{
+  display: none;
+  width: 90%;
+  min-height: 50%;
+  max-height: 80%;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.servico-texto.show{
+  display: block;
+  animation: .5s click forwards;
+}
+.servico-texto p{
+  margin-bottom: 10px;
+}
+
+
+@keyframes click{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
