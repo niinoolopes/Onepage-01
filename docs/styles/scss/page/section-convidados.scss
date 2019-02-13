@@ -1,0 +1,55 @@
+.section-convidados{
+  padding: 50px 0;
+}
+.convidados-titulo{
+  text-align: center;
+  margin-bottom: 15px;
+}
+.convidados-subtitulos{
+  font-size: 14px;
+  color: $preto;
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 35px;
+}
+// CONVIDADO
+.convidado{
+  width: 90%;
+  margin: auto;
+  position: relative; 
+}
+.convidado-foto,
+.convidado-nome{
+  cursor: pointer;
+}
+
+
+
+.convidado-foto{
+  opacity: .8;
+  box-shadow: 0 2px 4px 0 rgba(100,100,100,1);
+  border-radius: 5px;
+}
+.convidado-foto:hover{
+  opacity: 1;
+}
+.convidado-nome{
+  text-align: center;
+  padding: 10px 0 20px;
+}
+.convidado-social {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+}
+.convidado-social a{
+  color: $preto; 
+  display: block;
+  border: 1px solid rgba(0,0,0,.3);
+  margin-top: 2px;
+  padding: 0px 3px;
+}
+.convidado-social a:hover{
+  color: #000;
+
+}
