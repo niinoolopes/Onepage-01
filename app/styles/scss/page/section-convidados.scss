@@ -15,31 +15,38 @@
 // CONVIDADO
 .convidado{
   width: 90%;
-  margin: auto;
-  position: relative; 
+  margin: 0 auto 20px;
+  position: relative;
+  box-shadow: 0 1px 4px 0px rgba(0, 0, 0, .5);
 }
 .convidado-foto,
 .convidado-nome{
   cursor: pointer;
 }
 
-
+.convidado-nome,
+.convidado-foto{
+    transition-duration: .25s;
+}
 
 .convidado-foto{
   opacity: .8;
-  box-shadow: 0 2px 4px 0 rgba(100,100,100,1);
   border-radius: 5px;
 }
 .convidado-foto:hover{
+  transform: scale(1.05);
   opacity: 1;
 }
 .convidado-nome{
   text-align: center;
-  padding: 10px 0 20px;
+  padding: 7px 0;
+}
+.convidado-nome:hover{
+  text-decoration: underline;
 }
 .convidado-social {
   position: absolute;
-  top: 3px;
+  top: 1px;
   right: 3px;
 }
 .convidado-social a{
@@ -49,7 +56,16 @@
   margin-top: 2px;
   padding: 0px 3px;
 }
-.convidado-social a:hover{
-  color: #000;
 
+.convidado-social a:hover{
+  border-color: transparent;
+  color: #fff; 
+}
+
+.convidado-social a:nth-child(1):hover {
+  background: #4267b2;
+}
+
+.convidado-social a:nth-child(2):hover {
+  background: #b21463;
 }
