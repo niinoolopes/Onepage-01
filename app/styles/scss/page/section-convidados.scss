@@ -1,0 +1,71 @@
+.section-convidados{
+  padding: 50px 0;
+}
+.convidados-titulo{
+  text-align: center;
+  margin-bottom: 15px;
+}
+.convidados-subtitulos{
+  font-size: 14px;
+  color: $preto;
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 35px;
+}
+// CONVIDADO
+.convidado{
+  width: 90%;
+  margin: 0 auto 20px;
+  position: relative;
+  box-shadow: 0 1px 4px 0px rgba(0, 0, 0, .5);
+}
+.convidado-foto,
+.convidado-nome{
+  cursor: pointer;
+}
+
+.convidado-nome,
+.convidado-foto{
+    transition-duration: .25s;
+}
+
+.convidado-foto{
+  opacity: .8;
+  border-radius: 5px;
+}
+.convidado-foto:hover{
+  transform: scale(1.05);
+  opacity: 1;
+}
+.convidado-nome{
+  text-align: center;
+  padding: 7px 0;
+}
+.convidado-nome:hover{
+  text-decoration: underline;
+}
+.convidado-social {
+  position: absolute;
+  top: 1px;
+  right: 3px;
+}
+.convidado-social a{
+  color: $preto; 
+  display: block;
+  border: 1px solid rgba(0,0,0,.3);
+  margin-top: 2px;
+  padding: 0px 3px;
+}
+
+.convidado-social a:hover{
+  border-color: transparent;
+  color: #fff; 
+}
+
+.convidado-social a:nth-child(1):hover {
+  background: #4267b2;
+}
+
+.convidado-social a:nth-child(2):hover {
+  background: #b21463;
+}
