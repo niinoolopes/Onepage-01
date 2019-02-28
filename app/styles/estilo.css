@@ -590,11 +590,15 @@ img {
     opacity: 1; } }
 
 .section-convidados {
-  padding: 50px 0; }
+  padding: 15px 0; }
+  @media (min-width: 576px) {
+    .section-convidados {
+      padding: 50px 0 15px; } }
 
 .convidados-titulo {
   text-align: center;
-  margin-bottom: 15px; }
+  font-size: 28px;
+  line-height: 2; }
 
 .convidados-subtitulos {
   font-size: 14px;
@@ -653,3 +657,34 @@ img {
 
 .convidado-social a:nth-child(2):hover {
   background: #b21463; }
+
+.section-agendas {
+  padding: 15px 0; }
+  @media (min-width: 576px) {
+    .section-agendas {
+      padding: 25px 0; } }
+
+.agenda-titulo {
+  text-align: center;
+  font-size: 28px;
+  line-height: 2;
+  margin-bottom: 18px; }
+
+.agenda {
+  border: 1px solid;
+  margin-bottom: 18px; }
+  @media (min-width: 576px) {
+    .agenda {
+      width: 98%; } }
+
+.agenda-nome {
+  line-height: 2;
+  text-align: center;
+  font-size: 18px;
+  background: #116290;
+  color: #fff;
+  width: 70%;
+  margin: auto;
+  border: 1px solid rgba(250, 250, 250, 0.5);
+  box-shadow: inset 0 0px 5px 0px rgba(250, 250, 250, 0.5), 0 3px 4px 1px rgba(0, 0, 0, 0.3);
+  transform: translateY(-10px); }
